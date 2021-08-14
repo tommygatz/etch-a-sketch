@@ -17,11 +17,6 @@ function buildGrid(size){
         container.removeChild(el);
     })
 
-    // let rows = buildRows(size);
-    // console.log(rows);
-    // let cols = buildCols(size);
-    // console.log(cols);
-
     const total = size * size;
     
     for (num = 1; num <= total; num++){
@@ -35,7 +30,7 @@ function buildGrid(size){
     boxes.forEach((box) => { 
         box.addEventListener('mouseenter', () => {  
             box.style.backgroundColor = 'red';
-        });
+        });      
     });
 }
 
