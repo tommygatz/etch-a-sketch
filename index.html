@@ -10,8 +10,12 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
-        
+        <div class="input-div">
+            <input type='number' name='grid-size' id='num-box' placeholder="Enter Grid Size"></input><br>
+            <button id='btn' onclick='buildGrid(document.getElementById("num-box").value)'>Build Grid/Clear Board</button>            
+        </div>
+        <!-- <button class='btn' id='clear'>clear board</button> -->
+        <div id='grid-container'></div>
         <script src="script.js" async defer></script>
     </body>
 </html>

@@ -1,0 +1,28 @@
+#grid-container {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: 50px;
+    display: grid;
+    width: 90vw;
+    height: 90vw;
+    margin: auto;
+    max-width: 500px;
+    max-height: 500px;
+    border: 1px solid gray;
+}
+
+.box {
+    width: auto;
+    height: auto;
+    border: .1px solid lightgray;
+}
+
+.input-div{
+    display: flexbox;
+    position: relative;
+    margin: auto;
+    height: 25px;
+    text-align: center;
+
+}
