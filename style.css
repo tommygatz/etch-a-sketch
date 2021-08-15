@@ -2,7 +2,7 @@
     position: relative;
     left: auto;
     right: auto;
-    top: 50px;
+    top: 25px;
     display: grid;
     width: 90vw;
     height: 90vw;
@@ -24,5 +24,8 @@
     margin: auto;
     height: 25px;
     text-align: center;
+}
 
+input {
+    width: auto;
 }

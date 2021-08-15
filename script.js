@@ -1,5 +1,7 @@
+const maxNum = 75;
+
 const container = document.getElementById('grid-container');
-const clear = document.getElementById('clear');
+const clear = document.getElementById('btn');
 const build = document.getElementById('')
 
 
@@ -11,6 +13,13 @@ clear.addEventListener('click', () => {
 })
 
 function buildGrid(size){
+
+    if (size > maxNum){
+        size = maxNum;
+        let num = document.getElementById("num-box");
+        num.setAttribute('value', maxNum);
+    }
+
     const container = document.getElementById('grid-container');
     const elem = container.querySelectorAll('div');
     elem.forEach((el) => {
@@ -33,9 +42,6 @@ function buildGrid(size){
         });      
     });
 }
-
-
-
 
 function addDiv(boxNum){
 
